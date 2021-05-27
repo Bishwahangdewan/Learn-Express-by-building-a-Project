@@ -1,0 +1,266 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial;
+
+}
+
+.green-text{
+    color:#1cff91;
+}
+
+body{
+    background-color: #444;
+    color:#fff;
+    font-size: 16px;
+}
+
+header{
+    background-color:#222;
+    box-shadow: 2px 2px 4px #111;
+}
+
+header > .container{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content: space-between;
+}
+
+header .logo{
+    text-decoration: none;
+    padding-top:25px;
+    font-size: 25px;
+    color:#fff;
+    font-weight:bold;
+    letter-spacing: 1px;
+}
+
+header nav ul{
+    display:flex;
+    list-style-type: none;
+}
+
+header nav ul li{
+    padding : 25px 20px;
+}
+
+header nav ul li a{
+    text-decoration:none;
+    color:#fff;
+    font-size: 18px;
+    transition:0.5s;
+}
+
+header nav ul li a:hover{
+    color:#1cff91;
+}
+
+.showcase{
+    text-align:center;
+    margin-top:10%;
+}
+
+.showcase h1{
+    font-size: 50px;
+}
+
+.showcase p{
+    font-size: 20px;
+    padding-top:15px;
+}
+
+.showcase a {
+    display: inline-block;
+    text-decoration: none;
+    color:#fff;
+    padding:10px 40px;
+    background-color: #222;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px #111;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.showcase a:hover{
+    box-shadow: none;
+    background-color: #333;
+    color: #1cff91;
+}
+
+.add-container{
+    width:90%;
+    margin:auto;
+}
+
+.add{
+    background-color: #222;
+    width:30%;
+    overflow:hidden;
+    margin-top:4%;
+    border-radius:10px;
+    display:flex;
+    justify-content: space-between;
+    padding:10px 20px;
+}
+
+.add a{
+    display:inline-block;
+    text-decoration: none;
+    padding:10px 30px;
+    background-color: #1cff91;
+    border-radius: 5px;
+    font-weight: bold;
+    color:#333;
+    transition:0.3s;
+}
+
+.add a:hover{
+    background-color: #111;
+    color:#fff;
+}
+
+.add p{
+    padding-top:10px;
+    font-weight: bold;
+}
+
+.add-to-diary{
+    width:90%;
+    margin:auto;
+    margin-top:4%;
+    background-color: #222;
+    padding:50px 30px;
+    border-radius: 10px;
+}
+
+.add-to-diary form{
+    margin-top:3%;
+}
+
+.add-to-diary form > .form-group{
+    margin-bottom: 25px;
+}
+
+.add-to-diary form > .form-group > input[type="text"] ,.add-to-diary form > .form-group >textarea{
+    width:100%;
+    padding:10px;
+    border-radius:5px;
+    outline:none;
+    border:none;
+    margin-top:5px;
+}
+
+.add-to-diary form > .form-group > input[type="date"]{
+    margin-top:5px;
+    padding:5px;
+    border-radius: 5px;
+    border:none;
+}
+
+.add-to-diary form > input[type="submit"],.diary-container >a{
+    display: inline-block;
+    text-decoration: none;
+    background-color:#1cff91;
+    padding:10px 40px;
+    border:none;
+    border-radius: 5px;
+    font-weight: bold;
+    box-sizing: 2px 2px 4px #111;
+    color:#333;
+    transition:0.5s;
+}
+
+.add-to-diary form > input[type="submit"]:hover{
+    background-color: #fff;
+    padding:10px 36px;
+}
+
+
+.diary{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    margin-top:4%;
+    justify-content: space-between;
+}
+
+.diary-container{
+    width:90%;
+    background-color:#333;
+    padding:30px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px #222;
+    transition: 0.3s;
+    margin-bottom:30px;
+}
+
+.diary-container:hover{
+    box-shadow: none;
+}
+
+.diary-container >h3{
+    padding-bottom: 20px;
+}
+
+.diary-container >a{
+    margin-top: 20px;
+}
+
+.diary-container >a:hover{
+    background:#fff;
+}
+
+.page-container{
+    width:90%;
+    margin:auto;
+    margin-top:5%;
+    background-color:#222;
+    border-radius: 10px;
+    padding:40px;
+}
+
+.page-container > h1 ,.page-container >p{
+    padding-bottom: 20px;
+}
+
+.diary-text{
+    font-size: 20px;
+    padding-top:10px;
+}
+
+.settings{
+    padding-top:30px;
+    display:flex;
+}
+
+.edit{
+    padding:10px 30px;
+    background-color: rgb(7, 180, 180);
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color:#fff;
+    transition:0.3s;
+}
+
+.edit:hover{
+    background-color: rgb(38, 228, 228) ;
+}
+
+.delete{
+    padding:12px 30px;
+    background-color: rgb(247, 58, 58);
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color:#fff;
+    margin-left:10px;
+    transition:0.3s;
+    border:none;
+    font-size: 18px;
+}
+
+.delete:hover{
+    background-color:  rgb(255, 92, 92);
+}

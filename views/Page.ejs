@@ -1,0 +1,28 @@
+<%- include('./layout/Header') %>
+    <%- include('./layout/Navbar') %>
+
+        <div class="page-container">
+            <h1>
+                <%= data.title %>
+            </h1>
+
+            <p>
+                <%=data.date%>
+            </p>
+
+            <p class="diary-text">
+                <%= data.description %>
+            </p>
+
+            <div class="settings">
+                <a href="/diary/edit/<%=data.id%>" class="edit">Edit</a>
+
+                <form action="/diary/delete/<%= data.id %>?_method=DELETE" method="post">
+                    <input type="hidden" name="_method" value="DELETE">
+                    <input type="submit" value="Delete" class="delete">
+                </form>
+            </div>
+
+        </div>
+
+        <%- include('./layout/Footer') %>
