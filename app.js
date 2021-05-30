@@ -20,7 +20,7 @@ app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 
 //Connecting our App with MongoDB using mongoose
-const url = 'mongodb+srv://scriptnation:12345@cluster0.ameaw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+const url = 'ADD YOUR URL';
 
 const connectionParams = {
     useNewUrlParser: true,
